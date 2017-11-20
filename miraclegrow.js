@@ -15,7 +15,8 @@ const miraclegrow = function(size){
     let forest = new Tree(0);
 
     for(let i=0;i<forestSize;i++){
-        forest.add(plantingSeeds.dequeue())
+
+        forest.add(new Tree(plantingSeeds.dequeue()))
     }
 
     return forest;
